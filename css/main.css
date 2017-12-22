@@ -1,0 +1,36 @@
+#intro {
+  background-color: black;
+  bottom:0;
+  color: orange;
+  left:0;
+  position:absolute;
+  text-align: center;
+  top:0;
+  width:100%;
+}
+
+.first-section {
+  background-color: black;
+}
+
+.intro-title {
+  position: relative;
+  top: 40%;
+}
+
+.left-square {
+  border: 1px solid white;
+  display: inline-block;
+  padding: 1%;
+}
+
+.right-square {
+  border: 1px solid white;
+  display: inline-block;
+  padding: 1%;
+}
+
+.first-hr {
+  display: inline-block;
+  width: 75%;
+}
