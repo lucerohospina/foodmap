@@ -1,21 +1,27 @@
+/* INTRO SPLASH */
 #intro {
-  background-color: black;
+  background-color: #2b2b2b;
   bottom:0;
-  color: orange;
+  color: #d47426;
   left:0;
   position:absolute;
   text-align: center;
   top:0;
   width:100%;
-}
-
-.first-section {
-  background-color: black;
+  z-index: 1;
 }
 
 .intro-title {
   position: relative;
   top: 40%;
+}
+
+/* HOME */
+.first-section {
+  background-color: #2b2b2b;
+  color: #d47426;
+  height: 100vh;
+  text-align: center;
 }
 
 .left-square {
@@ -34,3 +40,10 @@
   display: inline-block;
   width: 75%;
 }
+
+.home-image {
+  display: inline-block;
+  height: 30vh;
+  padding: 2em;
+}
+
