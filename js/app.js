@@ -7,10 +7,19 @@ $(document).ready(function() {
   });
 
   /* Dando funcionalidad al filtro seleccionador */
-
+  var $imgContainer = $('.images-container');
   var $select = $('#rest-filter');
+  var $subSelectType = null;
 
   $select.on('change', restFilter);
+
+  // arrays de restaurantes segun su tipo
+  var $criollo = restaurants['Criolla'];
+  var $marino = restaurants['Marina'];
+  var $chino = restaurants['China'];
+
+  //agregando imagenes de restaurantes
+  
 
   function restFilter() {
     var $kindOfFood = $select.val();
