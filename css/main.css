@@ -24,23 +24,32 @@
   text-align: center;
 }
 
-.left-hr,
-.rigth-hr {
-  border: 1px solid white;
-  display: inline-block;
-  
-  padding: 1%;
+.rule {
+  border-top: 1px solid #fff;
 }
 
-.middle-hr {
-  display: inline-block;
-  
-  width: 75%;
+.rule:before, .rule:after {
+  content: '';
+  background-color: #2b2b2b;
+  padding: 1.5%;
+  float: left;
+  border: 1px solid #fff;
+  margin-top: -1.8%;
+}
+
+.rule:after {
+  float: right;
 }
 
 #map {
-  height: 200px;
+  height: 30vh;
   width: 100%;
+ }
+
+ .gmap {
+   margin-top: 10%;
+   padding-left: 7%;
+   padding-right: 7%;
  }
 
 .home-image {
