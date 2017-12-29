@@ -24,22 +24,24 @@
   text-align: center;
 }
 
-.left-square {
+.left-hr,
+.rigth-hr {
   border: 1px solid white;
   display: inline-block;
+  
   padding: 1%;
 }
 
-.right-square {
-  border: 1px solid white;
+.middle-hr {
   display: inline-block;
-  padding: 1%;
-}
-
-.first-hr {
-  display: inline-block;
+  
   width: 75%;
 }
+
+#map {
+  height: 200px;
+  width: 100%;
+ }
 
 .home-image {
   display: inline-block;
