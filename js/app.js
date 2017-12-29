@@ -7,26 +7,39 @@ $(document).ready(function() {
   });
 
   /* Dando funcionalidad al filtro seleccionador */
-  var $imgContainer = $('.images-container');
+  var $imgContainer = $('#img-container-1');
+  var $imgContainer2 = $('#image-container-2');
+  var $imgContainer3 = $('#image-container-3');
+  var $imgContainer4 = $('#image-container-4');
   var $select = $('#rest-filter');
-  var $subSelectType = null;
-
-  $select.on('change', restFilter);
-
-  // arrays de restaurantes segun su tipo
-  // var $criollo = restaurants['Criolla'];
-  // var $marino = restaurants['Marina'];
-  // var $chino = restaurants['China'];
-  var $criollo = ['criollo1', 'criollo2', 'criollo3', 'criollo4', 'criollo5'];
-  var $marino = ['marino1', 'marino2', 'marino3', 'marino4', 'marino5'];
-  var $chino = ['chino1', 'chino2', 'chino3', 'chino4', 'chino5'];
-
   
+
+  $select.on('change', function() {
+    console.log($select.val());
+    $imgContainer.hide();
+    for (i = 0; i < data.length; i++) {
+      if ($select.val() === 'criolla' && data[i]['type'] === 'criollo') {
+        $imgContainer2.append('<img src="' + data[i].image + '">');
+        console.log(data[i]['image']);
+      } else if ($select.val() === 'marina' && data[i]['type'] === 'marino') {
+        $imgContainer2.hide();
+        $imgContainer4.hide();
+        $imgContainer3.append('<img src="' + data[i].image + '">');
+        console.log(data[i]['image']);
+      } else if ($select.val() === 'pizzeria' && data[i]['type'] === 'pizza') {
+        $imgContainer2.hide();
+        $imgContainer3.hide();
+        $imgContainer4.append('<img src="' + data[i].image + '">');
+        console.log(data[i]['image']);
+      }
+    }
+  });
 });
 
 /* Agregando el gmap */
 function initMap() {
-  var uluru = {lat: -25.363, lng: 131.044};
+  var uluru = {lat: -25.363,
+    lng: 131.044};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
     center: uluru
