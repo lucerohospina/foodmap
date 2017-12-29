@@ -21,44 +21,7 @@ $(document).ready(function() {
   var $marino = ['marino1', 'marino2', 'marino3', 'marino4', 'marino5'];
   var $chino = ['chino1', 'chino2', 'chino3', 'chino4', 'chino5'];
 
-  // agregando container para grupos de imagenes de restaurantes
-  function addImages(arrayRest, typeOfRest) {
-    $subSelectType = $('<div></div>');
-    $imgContainer.append($subSelectType);
-
-    for (var i = 0; i < arrayRest.length; i++) {
-      createImages(arrayRest[i], restFilter);
-    }
-  }
-
-  // agregando imagenes de los restaurantes
-  function createImages(name, kindOf) {
-    var $image = $('<img>');
-    $image.attr('src', 'assets/images/" + kindOf + "/" + name + ".jpg');
-    $image.attr('alt', name);
-
-    $subSelectType.append('image');
-  }
-  // Evento change para el select
-  function restFilter(event) {
-    switch (true) {
-    case event.target.value === 'criolla':
-      addImages($criollo, 'criollo');
-      break;
-    case event.target.value === '$marina':
-      addImages($marino, marino);
-      break;
-    case event.target.value === 'china':
-      addImages($chino, chino);
-      break;
-    default:
-      addImages($criollo, 'criollo');
-      addImages($marino, 'marino');
-      addImages($chino, 'chino');
-    }
-    // var $kindOfFood = $select.val();
-    // console.log($kindOfFood);
-  }
+  
 });
 
 /* Agregando el gmap */
@@ -73,5 +36,6 @@ function initMap() {
     map: map
   });
 }
+/* Fin de mapa */
 
 /* window.location.href = 'ruta donde esta mi archivo html' */

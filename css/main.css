@@ -1,3 +1,7 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* INTRO SPLASH */
 #intro {
   background-color: #2b2b2b;
@@ -12,6 +16,8 @@
 }
 
 .intro-title {
+  font-size: 3em;
+  font-weight: 300;
   position: relative;
   top: 40%;
 }
@@ -24,17 +30,27 @@
   text-align: center;
 }
 
+.first-section h1 {
+  font-size: 3em;
+  font-weight: 300;
+  margin-top: 7%;
+}
+
+.first-section h3 {
+  font-weight: 300;
+}
+
 .rule {
-  border-top: 1px solid #fff;
+  border-top: 2px solid #fff;
 }
 
 .rule:before, .rule:after {
-  content: '';
   background-color: #2b2b2b;
-  padding: 1.5%;
+  border: 2px solid #fff;
+  content: '';
   float: left;
-  border: 1px solid #fff;
-  margin-top: -1.8%;
+  margin-top: -2.5%;
+  padding: 1.5%;
 }
 
 .rule:after {
@@ -47,14 +63,27 @@
  }
 
  .gmap {
-   margin-top: 10%;
+   margin-top: 7%;
    padding-left: 7%;
    padding-right: 7%;
  }
 
-.home-image {
-  display: inline-block;
-  height: 30vh;
-  padding: 2em;
-}
+ #rest-filter {
+   color: rgb(136, 130, 130);
+ }
 
+ .top-group {
+   margin-top: 5%;
+ }
+
+ .top-group,
+ .bottom-group {
+   background-color: #2b2b2b;
+   padding-left: 5%;
+   padding-right: 5%;
+ }
+
+ .pic {
+   height: 100%;
+   padding: 0;
+ }
