@@ -95,3 +95,13 @@ body {
   border: 1px solid transparent;
   transform: scale(1.1);
  }
+
+ /* Modal */
+.modal-header,
+.modal-footer {
+  background-color: rgba(136, 130, 130, 0.418);
+}
+
+.modal-header h4 {
+  font-weight: 700;
+}

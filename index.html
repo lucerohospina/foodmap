@@ -39,21 +39,43 @@
     </div>
     <div id="img-container-1">
     <div class="row top-group">
-        <img class="col-xs-4 pic" src="assets/images/criollo/criollo2.jpg" width=300 heigth=300 alt="">
-        <img class="col-xs-4 pic" src="assets/images/chino/chino1.jpg" alt="">
-        <img class="col-xs-4 pic" src="assets/images/marino/marino2.jpg" width=300 heigth=300 alt="">
+        <img class="col-xs-4 pic" data-toggle="modal" data-target="#rest-modal" src="assets/images/criollo/criollo2.jpg" alt="">
+        <img class="col-xs-4 pic" data-toggle="modal" data-target="#rest-modal" src="assets/images/chino/chino1.jpg" alt="">
+        <img class="col-xs-4 pic" data-toggle="modal" data-target="#rest-modal" src="assets/images/marino/marino2.jpg" alt="">
     </div> 
     <div class="row bottom-group">
-        <img class="col-xs-4 pic" src="assets/images/chino/chino2.jpg" width=300 heigth=300 alt="">
-        <img class="col-xs-4 pic" src="assets/images/criollo/criollo1.jpg" alt="">
-        <img class="col-xs-4 pic" src="assets/images/marino/marino4.jpg" alt="">
+        <img class="col-xs-4 pic" data-toggle="modal" data-target="#rest-modal" src="assets/images/chino/chino2.jpg" alt="">
+        <img class="col-xs-4 pic" data-toggle="modal" data-target="#rest-modal" src="assets/images/criollo/criollo1.jpg" alt="">
+        <img class="col-xs-4 pic" data-toggle="modal" data-target="#rest-modal" src="assets/images/marino/marino4.jpg" alt="">
     </div>
   </div>
   <div id="image-container-2" class="row top-group"></div>
   <div id="image-container-3" class="row top-group"></div>
   <div id="image-container-4" class="row top-group"></div>
   </section>
-
+  <!-- Modal -->
+  <div class="modal fade bs-example-modal-sm" id="rest-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center text-uppercase" id="myModalLabel">Contáctanos</h4>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">Nombre de Restaurant</p>
+            
+            <p></p> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Dirección:</p>
+            <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Teléfono:</p>
+            <p><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Tipo de Comida:</p>
+            <p><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Rating:</p>
+          </div>
+          <div class="modal-footer">
+            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Sección para tabletas y desktops: en contrucción -->
   <section class="container fluid visible-sm visible-md visible-lg">
     <div class="row"></div>
       <h1 class="col-sm-6 col-sm-offset-3 text-center">Foodmap</h1>
@@ -68,7 +90,7 @@
       <h3 class="col-sm-8 col-sm-offset-2 text-center">Visítanos en nuestra app!</h3>
     </div>
   </section>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS_1hboP6gl9NqHJMrsRm8cX8GveldLuc&callback=initMap"></script>
   <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
