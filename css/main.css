@@ -88,7 +88,6 @@ body {
    border-radius: 10px;
    height: 100%;
    padding: 0;
-   
  }
 
  .effect:hover {
@@ -104,4 +103,12 @@ body {
 
 .modal-header h4 {
   font-weight: 700;
+}
+
+/* vista de tablet y desktop */
+.sm-md-lg-image {
+  left: 40%;
+  position: absolute;
+  top: 35%;
+  width: 20%;
 }

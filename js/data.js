@@ -79,4 +79,29 @@ var data = [{
   'type': 'pizza',
   'image': 'assets/images/pizza/pizza5.jpg'
 },
+{
+  'name': 'El gran sanguchon',
+  'type': 'fast-food',
+  'image': 'assets/images/fast/fast1.jpg'
+},
+{
+  'name': 'Hamburguesa Loca',
+  'type': 'fast-food',
+  'image': 'assets/images/fast/fast2.jpg'
+},
+{
+  'name': 'En la esquina',
+  'type': 'fast-food',
+  'image': 'assets/images/fast/fast3.jpg'
+},
+{
+  'name': 'Las Hamburguesas del Tio Mario',
+  'type': 'fast-food',
+  'image': 'assets/images/fast/fast4.jpg'
+},
+{
+  'name': 'Come y peca',
+  'type': 'fast-food',
+  'image': 'assets/images/fast/fast5.jpg'
+}
 ];
